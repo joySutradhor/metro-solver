@@ -8,9 +8,9 @@ import Image from 'next/image'
 
 export default function Footer () {
   return (
-    <footer className='bg-gradient-to-b from-[#282f3f] via-[#2d184d] to-[#2b2546] text-white px-6 md:px-16 pt-[10vh] '>
+    <footer className='bg-gradient-to-b from-[#282f3f] via-[#2d184d] to-[#2b2546] text-white px-6 md:px-6 lg:px-20 pt-[10vh] '>
       {/* Newsletter Section */}
-      <div className='mb-16  bg-white/4 rounded-4xl py-10 px-16'>
+      <div className='mb-16  bg-white/4 rounded-4xl  py-10 px-5 lg:py-10 lg:px-16'>
         <div className='flex flex-col md:flex-row items-center justify-center gap-6 mb-10'>
           <div>
             <Image src='/logo.gif' alt='Logo' width={100} height={50} />
@@ -22,7 +22,7 @@ export default function Footer () {
         </div>
 
         {/* subscribe btn */}
-        <div className='flex flex-col md:flex-row items-center justify-center gap-16'>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-5 lg:gap-16'>
           <div className='text-left'>
             <h2 className='text-2xl md:text-3xl font-semibold mb-2'>
               Subscribe to Our Newsletter
@@ -45,7 +45,7 @@ export default function Footer () {
       </div>
 
       {/* Footer Grid */}
-      <div className=' grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 xl:gap-10 2xl:gap-16 text-lg mt-[15vh]'>
+      <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 xl:gap-10 2xl:gap-16 text-lg mt-[15vh]'>
         {/* Contact */}
         <div className='space-y-5'>
           <h3 className='text-3xl font-bold mb-5'>Got Questions? Call us!</h3>
